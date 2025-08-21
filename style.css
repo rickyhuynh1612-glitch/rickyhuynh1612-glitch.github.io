@@ -1,0 +1,39 @@
+h1 {
+    color:rgb(15, 97, 70);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40;
+
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.profile-text {
+    flex:1;
+}
+
+.profile-photo {
+    width:60%;
+    border-radius: 8px;
+}
+
+body {
+    background-color: rgb(135, 81, 81);
+}
+
+body {
+    background-image: url(images/profile.png);
+}
+
+p {
+    color:rgb(255, 255, 255);
+}
