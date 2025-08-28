@@ -8,9 +8,10 @@
 </head>
 <body>
     <header>
-        <h1 style="color: rgb(255, 255, 255);">Contact Information</h1>
+        <h1>Contact Information</h1>
     </header>
-    <nav>
+     <!--Navigation Menu-->
+     <nav>
         <div class="container">
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -18,18 +19,39 @@
                 <li><a href="teaching.html">Teaching Practice</a></li>
                 <li><a href="projects.html">Project Showcase</a></li>
                 <li><a href="worksamples.html">Samples of Work</a></li>
-                <li><a href="contact.html">Contact Me</a></li>
+                <li><a class="active" href="contact.html">Contact Me</a></li>
+                <li><a href="resume.html">Resume</a></li>
+                <li><a href="resources.html">Teaching Resources</a></li>
             </ul>
      </div>
     </nav>
-    
-    <ol>
-       <li>Email - ricky.huynh001@syd.catholic.edu.au</li>
-       <li>Mobile - 0434 668 879</li>
-       <li>Work Address - 273 Horsley Road. Milperra 2214 NSW</li> 
-    </ol>
+    <!--This is the main content area for my page, in line with Semantic HTML-->
+    <main>
+        <ol>
+            <li>Email - ricky.huynh001@syd.catholic.edu.au</li>
+            <li>Mobile - 0434 668 879</li>
+            <li>Work Address - 273 Horsley Road. Milperra 2214 NSW</li> 
+         </ol>
 
-   
+
+        <section class="section">
+            <form id="contact-form" action="#" method="post" autocomplete="on">
+                <fieldset>
+                    <legend>Your Details</legend>
+                    <label for="name">Full Name</label>
+                    <input id="name" name="name" type="text" placeholder="John Doe" required minlength="6">
+                    <label for="email">Email Address</label>
+                    <input id="email" name="email" type="email" placeholder="name@example.com.au" required autocomplete="email">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" type="message" placeholder="How can I help?" required minlength="8"></textarea>
+                    <button type="submit">Send</button>
+                    
+
+                </fieldset>
+            </form>
+        </section>
+    </main>
+
 </body>
 <footer>
     <div class="container">
